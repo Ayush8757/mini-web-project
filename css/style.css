@@ -110,4 +110,187 @@ html{
     height: 100%;
     width: 100%;
 }
+.about .about-img .about-wrap::after{
+    position: absolute;
+    content: '';
+    right: -5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70%;
+    height: 120%;
+    background-color: rgba(34, 33, 33, 0.158);
+    z-index: -1;
+}
 /*  end of about section */
+
+/* Service Section */
+
+.services{
+    flex-direction: column;
+    min-height: 60vh;
+    padding: 10rem 5rem;
+}
+.services .ser-head{
+    width: 100%;
+    text-align: center;
+}
+.services .ser-head .ser-head-heading{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+}
+.services .ser-head .ser-head-des{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-top: 2rem; /**/
+}
+.services .ser-info{
+    display: flex;
+    margin-top: 3rem; /**/
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+.services .ser-info .serv{
+    width: 100%;
+    min-height: 30rem; /**/
+    position: relative;
+    transition: 0.3s ease transform;
+    margin: 0.5rem; /**/
+}
+.services .ser-info .serv .serv-cards{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: .3s ease transform;
+    display: block;
+}
+.services .ser-info .serv .serv-cards .serv-front,
+.services .ser-info .serv .serv-cards .serv-back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 1rem; /**/
+}
+.services .ser-info .serv .serv-cards .serv-back{
+    transform: rotateY(180deg);
+}
+.services .ser-info .serv .serv-cards .serv-front i{
+    font-size: 4rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+.services .ser-info .serv .serv-cards .serv-front .serv-front-head,
+.services .ser-info .serv .serv-cards .serv-back .serv-back-head{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+.services .ser-info .serv:hover .serv-cards{
+    transform: rotateY(180deg);
+}
+.services .ser-info .serv .serv-cards .serv-back .serv-back-desc{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.services .ser-info .serv:nth-child(2) .serv-cards .serv-front{
+    background-image: url(/assets/coder.jpg);
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+.services .ser-info .serv:nth-child(2) .serv-cards .serv-front::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index:-1;
+}
+.services .ser-info .serv:nth-child(2) .serv-cards .serv-front i{
+    color: white;
+}
+
+/* End of Service Section */
+
+/* Hire me Section*/
+
+.hire{
+    min-height: 10vh;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 3rem 2rem;
+}
+.hire .hire-head{
+    font-size: 2.2rem;
+    color: black;
+    text-align: center;
+}
+.hire .hire-btn{
+    text-decoration: none;
+    padding: 2rem 3rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    background-color: rgba(0, 0, 0, 0.301);
+    margin-top: 1rem;
+    color: white;
+    transition: 1s ease background-color;
+}
+.hire .hire-btn:hover{
+    background-color: black;
+}
+
+/* End of Hire me Section*/
+
+/*Footer Section*/
+.footer{
+    min-height: 20vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem;
+}
+.footer .contact{
+    padding: 2rem;
+}
+.footer .contact .con-head{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+.footer .con-info{
+    font-size: 1.6rem;
+    padding-top: 1rem;
+    letter-spacing: 0.1rem;
+}
+.footer .social .social-head{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding-bottom: .5rem;
+}
+.footer .social .social-icon a{
+    color: white;
+    font-size: 3rem;
+    margin: .5rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+/* End of Footer Section*/
