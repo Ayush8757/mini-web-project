@@ -205,7 +205,7 @@ html{
     text-align: center;
 }
 .services .ser-info .serv:nth-child(2) .serv-cards .serv-front{
-    background-image: url(/assets/coder.jpg);
+    background-image: url(https://ayush8757.github.io/mini-web-project/assets/coder.jpg);
     background-size: cover;
     position: relative;
     color: white;
